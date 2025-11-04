@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Team Members | Argon Dashboard</title>
+
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-icons.css" rel="stylesheet">
+  <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-svg.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Files -->
+  <link href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+
+  <div class="min-height-300 bg-dark position-absolute w-100"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
+    <div class="sidenav-header">
+      <a class="navbar-brand m-0" href="#">
+        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">Creative Tim</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../pages/dashboard.html"><i class="ni ni-tv-2 text-dark"></i><span class="nav-link-text ms-2">Dashboard</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/tables.html"><i class="ni ni-calendar-grid-58 text-dark"></i><span class="nav-link-text ms-2">Tables</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/billing.html"><i class="ni ni-credit-card text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Billing</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/virtual-reality.html"><i class="ni ni-app text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">virtual-reality</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/rtl.html"><i class="ni ni-world-2 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">RTL</span></a></li>
+    </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../pages/profile.html"><i class="ni ni-single-02 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Profile</span></a></li>
+        <li class="nav-item"><a class="nav-link active" href="../pages/team.html"><i class="ni ni-single-02 text-dark"></i><span class="nav-link-text ms-2">Team</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/projects.html"><i class="ni ni-single-02 text-dark"></i><span class="nav-link-text ms-2">Projects</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/sign-in.html"><i class="ni ni-single-copy-04 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Sign-In</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/sign-up.html"><i class="ni ni-collection text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Sign-Up</span></a></li>
+
+
+      </ul>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content position-relative border-radius-lg">
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl">
+      <div class="container-fluid py-1 px-3">
+        <h6 class="font-weight-bolder mb-0">Team Members</h6>
+      </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0 d-flex justify-content-between align-items-center">
+              <h6>Team Members</h6>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#inviteModal">Invite Member</button>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Email</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Role</th>
+                    </tr>
+                  </thead>
+                  <tbody id="team-table">
+                    <tr>
+                      <td colspan="3" class="text-center">Loading team members...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Invite Modal -->
+  <div class="modal fade" id="inviteModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-3 bg-dark text-white d-flex flex-column justify-content-center align-items-center p-4">
+              <h5 class="fw-bold mb-2">Team Access</h5>
+              <p class="text-sm opacity-8 text-center">
+                Add new members to your team and manage their roles easily.
+              </p>
+            </div>
+            <div class="col-md-8 p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="modal-title">Invite a New Team Member</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <form id="invite-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="role" class="form-label">Role</label>
+                  <input type="text" id="role" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Send Invite</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const API_URL = "http://localhost:5000"; // your backend
+
+    async function fetchTeamMembers() {
+      try {
+        const res = await fetch(`${API_URL}/team-members`);
+        if (!res.ok) throw new Error("Failed to fetch");
+        const members = await res.json();
+        const table = document.getElementById("team-table");
+        table.innerHTML = "";
+        if (members.length === 0) {
+          table.innerHTML = `<tr><td colspan="3" class="text-center">No team members yet.</td></tr>`;
+          return;
+        }
+        members.forEach(member => {
+          const row = table.insertRow();
+          row.innerHTML = `
+            <td>${member.name}</td>
+            <td>${member.email}</td>
+            <td>${member.role}</td>
+          `;
+        });
+      } catch (err) {
+        console.error(err);
+        document.getElementById("team-table").innerHTML = `<tr><td colspan="3" class="text-center text-danger">Failed to load team members.</td></tr>`;
+      }
+    }
+
+    document.getElementById("invite-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const role = document.getElementById("role").value.trim();
+      if (!name || !email || !role) return alert("All fields are required");
+
+      try {
+        const res = await fetch(`${API_URL}/invite`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, role })
+        });
+        const result = await res.json();
+        if (!res.ok) return alert(result.error || "Failed to invite");
+
+        alert(result.message || "Member invited successfully");
+        document.getElementById("invite-form").reset();
+        await fetchTeamMembers();
+
+        const modalEl = document.getElementById('inviteModal');
+        bootstrap.Modal.getInstance(modalEl).hide();
+      } catch (err) {
+        alert("Error: " + err.message);
+      }
+    });
+
+    // Initial fetch
+    fetchTeamMembers();
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

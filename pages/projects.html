@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>Argon Dashboard - Projects</title>
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+  <div class="min-height-300 bg-dark position-absolute w-100"></div>
+
+  <!-- SIDEBAR -->
+ <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="#">
+        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">Creative Tim</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../pages/dashboard.html"><i class="ni ni-tv-2 text-dark"></i><span class="nav-link-text ms-2">Dashboard</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/tables.html"><i class="ni ni-calendar-grid-58 text-dark"></i><span class="nav-link-text ms-2">Tables</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/billing.html"><i class="ni ni-credit-card text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Billing</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/virtual-reality.html"><i class="ni ni-app text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Virtual Reality</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/rtl.html"><i class="ni ni-world-2 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">RTL</span></a></li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../pages/profile.html"><i class="ni ni-single-02 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Profile</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/team.html"><i class="ni ni-single-02 text-dark"></i><span class="nav-link-text ms-2">Team</span></a></li>
+        <li class="nav-item"><a class="nav-link active" href="../pages/projects.html"><i class="ni ni-single-02 text-dark"></i><span class="nav-link-text ms-2">Projects</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/sign-in.html"><i class="ni ni-single-copy-04 text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Sign-In</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/sign-up.html"><i class="ni ni-collection text-dark text-sm opacity-10"></i><span class="nav-link-text ms-2">Sign-Up</span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content position-relative border-radius-lg">
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <h6 class="font-weight-bolder mb-0">Projects</h6>
+      </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <h5>Project Management</h5>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal">Add Project</button>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped" id="project-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Projects inserted dynamically here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="project-form">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title" style="color: white;">Add Project</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="project-id">
+            <div class="mb-3">
+              <label>Title</label>
+              <input type="text" id="project-title" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label>Description</label>
+              <textarea id="project-description" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label>Start Date</label>
+              <input type="date" id="project-start" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label>End Date</label>
+              <input type="date" id="project-end" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label>Status</label>
+              <select id="project-status" class="form-control">
+                <option>Not Started</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save Project</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  let projects = [];
+
+  // --- HELPER FUNCTION: Wrap description to 10 words per line ---
+  // --- HELPER FUNCTION: Wrap description for display (table only) ---
+// --- HELPER FUNCTION: Wrap description for table display ---
+function wrapDescription(text, wordsPerLine = 10) {
+  const words = text.split(' ');
+  let result = '';
+  for (let i = 0; i < words.length; i++) {
+    result += words[i] + ' ';
+    if ((i + 1) % wordsPerLine === 0) result += '<br>';
+  }
+  return result.trim();
+}
+
+// --- RENDER PROJECTS INTO TABLE ---
+function renderProjects() {
+  const tbody = document.querySelector('#project-table tbody');
+  tbody.innerHTML = '';
+  projects.forEach(p => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${p.title}</td>
+      <td>${wrapDescription(p.description)}</td>
+      <td>${p.startDate}</td>
+      <td>${p.endDate}</td>
+      <td>${p.status}</td>
+      <td>
+        <button class="btn btn-sm btn-warning me-1" onclick="editProject('${p.id}')">Edit</button>
+        <button class="btn btn-sm btn-danger" onclick="deleteProject('${p.id}')">Delete</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// --- RENDER PROJECTS INTO TABLE ---
+
+  // --- FETCH PROJECTS FROM BACKEND ---
+  async function fetchProjects() {
+    const res = await fetch('http://localhost:5000/projects');
+    projects = await res.json();
+    renderProjects();
+  }
+
+
+  // --- ADD OR EDIT PROJECT ---
+  document.getElementById('project-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const id = document.getElementById('project-id').value;
+    const project = {
+      title: document.getElementById('project-title').value,
+      description: document.getElementById('project-description').value,
+      startDate: document.getElementById('project-start').value,
+      endDate: document.getElementById('project-end').value,
+      status: document.getElementById('project-status').value
+    };
+
+    if (id) {
+      await fetch(`http://localhost:5000/projects/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(project)
+      });
+    } else {
+      await fetch('http://localhost:5000/projects', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(project)
+      });
+    }
+
+    document.getElementById('project-form').reset();
+    bootstrap.Modal.getInstance(document.getElementById('projectModal')).hide();
+    fetchProjects();
+  });
+
+  // --- DELETE PROJECT ---
+  async function deleteProject(id) {
+    if (confirm('Are you sure you want to delete this project?')) {
+      await fetch(`http://localhost:5000/projects/${id}`, { method: 'DELETE' });
+      fetchProjects();
+    }
+  }
+
+  // --- EDIT PROJECT ---
+  function editProject(id) {
+    const project = projects.find(p => p.id === id);
+    if (!project) return;
+    document.getElementById('project-id').value = project.id;
+    document.getElementById('project-title').value = project.title;
+    document.getElementById('project-description').value = project.description;
+    document.getElementById('project-start').value = project.startDate;
+    document.getElementById('project-end').value = project.endDate;
+    document.getElementById('project-status').value = project.status;
+    new bootstrap.Modal(document.getElementById('projectModal')).show();
+  }
+
+  // --- INITIAL FETCH ---
+  fetchProjects();
+</script>
+
+</body>
+</html>
