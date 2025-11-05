@@ -25,8 +25,10 @@
 ![Starter Kit Running - View 3](./Photo3.png)
 
 #### Screenshot 4
-![Starter Kit Running - View 3](./Photo3.png)
+![Starter Kit Running - View 3](./Photo4.png)
 
+#### Screenshot 5
+![Starter Kit Running - View 3](./Photo5.png)
 ---
 
 ## Deliverable 2: GitHub Repository Link
