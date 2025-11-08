@@ -1,0 +1,36 @@
+[
+  {
+    "model": "core.user",
+    "pk": 1,
+    "fields": {
+      "email": "naraekele14@gmail.com",
+      "first_name": "Obi",
+      "last_name": "Nara",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true,
+      "password": "pbkdf2_sha256$600000$examplehash$somethinghashed" 
+    }
+  },
+  {
+    "model": "core.company",
+    "pk": 1,
+    "fields": {
+      "name": "Checkered Company",
+      "slug": "The Checkered Company",
+      "created_at": "2025-11-08T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "company": 1,
+      "role": "Manager",
+      "active": true,
+      "default_language": "en",
+      "created_at": "2025-11-08T00:00:00Z"
+    }
+  }
+]

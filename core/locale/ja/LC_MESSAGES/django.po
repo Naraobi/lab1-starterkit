@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-07 08:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\models.py:9 .\templates\registration\login.html:180
+#: .\templates\registration\new-password.html:174
+#: .\templates\registration\reset-password.html:137
+#: .\templates\registration\sign-up.html:208
+msgid "English"
+msgstr "英語"
+
+#: .\models.py:10 .\templates\registration\login.html:236
+#: .\templates\registration\new-password.html:230
+#: .\templates\registration\reset-password.html:193
+#: .\templates\registration\sign-up.html:264
+msgid "French"
+msgstr "フランス語"
+
+#: .\models.py:11 .\templates\registration\login.html:194
+#: .\templates\registration\new-password.html:188
+#: .\templates\registration\reset-password.html:151
+#: .\templates\registration\sign-up.html:222
+msgid "Spanish"
+msgstr "スペイン語"
+
+#: .\models.py:12 .\templates\registration\login.html:208
+#: .\templates\registration\new-password.html:202
+#: .\templates\registration\reset-password.html:165
+#: .\templates\registration\sign-up.html:236
+msgid "German"
+msgstr "ドイツ語"
+
+#: .\models.py:13 .\templates\registration\login.html:222
+#: .\templates\registration\new-password.html:216
+#: .\templates\registration\reset-password.html:179
+#: .\templates\registration\sign-up.html:250
+msgid "Japanese"
+msgstr "日本語"
+
+#: .\models.py:17
+msgid "Hello world"
+msgstr "こんにちは世界"
+
+#: .\models.py:18
+msgid "This is a translatable description"
+msgstr "これは翻訳可能な説明です"
+
+#: .\models.py:24
+msgid "Email required"
+msgstr "メールアドレスが必要です"
+
+#: .\models.py:37
+msgid "Email address"
+msgstr "メールアドレス"
+
+#: .\models.py:38
+msgid "First name"
+msgstr "名"
+
+#: .\models.py:39
+msgid "Last name"
+msgstr "姓"
+
+#: .\models.py:40 .\models.py:62
+msgid "Active"
+msgstr "有効"
+
+#: .\models.py:41
+msgid "Staff status"
+msgstr "スタッフステータス"
+
+#: .\models.py:51
+msgid "Company name"
+msgstr "会社名"
+
+#: .\models.py:53 .\models.py:64
+msgid "Created at"
+msgstr "作成日"
+
+#: .\models.py:61
+msgid "Role"
+msgstr "役割"
+
+#: .\models.py:63
+msgid "Default language"
+msgstr "デフォルト言語"
+
+#: .\templates\registration\login.html:59
+#: .\templates\registration\login.html:117
+#: .\templates\registration\sign-up.html:57
+#: .\templates\registration\sign-up.html:144
+msgid "Sign In"
+msgstr "サインイン"
+
+#: .\templates\registration\login.html:62
+#: .\templates\registration\sign-up.html:60
+msgid "Your Social Campaign"
+msgstr "あなたのソーシャルキャンペーン"
+
+#: .\templates\registration\login.html:89
+#: .\templates\registration\sign-up.html:87
+msgid "Or with email"
+msgstr "またはメールで"
+
+#: .\templates\registration\login.html:109
+#: .\templates\registration\reset-password.html:59
+msgid "Forgot Password ?"
+msgstr "パスワードをお忘れですか？"
+
+#: .\templates\registration\login.html:120
+#: .\templates\registration\sign-up.html:147
+msgid "Please wait.."
+msgstr "お待ちください..."
+
+#: .\templates\registration\login.html:127
+msgid "Not a Member yet?"
+msgstr "まだメンバーではありませんか？"
+
+#: .\templates\registration\login.html:128
+msgid "Sign up"
+msgstr "サインアップ"
+
+#: .\templates\registration\new-password.html:58
+msgid "Setup New Password ?"
+msgstr "新しいパスワードを設定しますか？"
+
+
+#: .\templates\registration\new-password.html:61
+msgid "Have you already reset the password ?"
+msgstr "すでにパスワードをリセットしましたか？"
+
+#: .\templates\registration\new-password.html:62
+#: .\templates\registration\sign-up.html:155
+msgid "Sign in"
+msgstr "サインイン"
+
+#: .\templates\registration\sign-up.html:154
+msgid "Already have an Account?"
+msgstr "すでにアカウントをお持ちですか？"

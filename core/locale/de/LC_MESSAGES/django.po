@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-07 08:10+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\models.py:9 .\templates\registration\login.html:180
+#: .\templates\registration\new-password.html:173
+#: .\templates\registration\reset-password.html:135
+#: .\templates\registration\sign-up.html:208
+msgid "English"
+msgstr "Englisch"
+
+#: .\models.py:10 .\templates\registration\login.html:236
+#: .\templates\registration\new-password.html:229
+#: .\templates\registration\reset-password.html:191
+#: .\templates\registration\sign-up.html:264
+msgid "French"
+msgstr "Französisch"
+
+#: .\models.py:11 .\templates\registration\login.html:194
+#: .\templates\registration\new-password.html:187
+#: .\templates\registration\reset-password.html:149
+#: .\templates\registration\sign-up.html:222
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: .\models.py:12 .\templates\registration\login.html:208
+#: .\templates\registration\new-password.html:201
+#: .\templates\registration\reset-password.html:163
+#: .\templates\registration\sign-up.html:236
+msgid "German"
+msgstr "Deutsch"
+
+#: .\models.py:13 .\templates\registration\login.html:222
+#: .\templates\registration\new-password.html:215
+#: .\templates\registration\reset-password.html:177
+#: .\templates\registration\sign-up.html:250
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: .\models.py:17
+msgid "Hello world"
+msgstr "Hallo Welt"
+
+#: .\models.py:18
+msgid "This is a translatable description"
+msgstr "Dies ist eine übersetzbare Beschreibung"
+
+#: .\models.py:24
+msgid "Email required"
+msgstr "E-Mail erforderlich"
+
+#: .\models.py:37
+msgid "Email address"
+msgstr "E-Mail-Adresse"
+
+#: .\models.py:38
+msgid "First name"
+msgstr "Vorname"
+
+#: .\models.py:39
+msgid "Last name"
+msgstr "Nachname"
+
+#: .\models.py:40 .\models.py:62
+msgid "Active"
+msgstr "Aktiv"
+
+#: .\models.py:41
+msgid "Staff status"
+msgstr "Mitarbeiterstatus"
+
+#: .\models.py:51
+msgid "Company name"
+msgstr "Firmenname"
+
+#: .\models.py:53 .\models.py:64
+msgid "Created at"
+msgstr "Erstellt am"
+
+#: .\models.py:61
+msgid "Role"
+msgstr "Rolle"
+
+#: .\models.py:63
+msgid "Default language"
+msgstr "Standardsprache"
+
+#: .\templates\registration\login.html:59
+#: .\templates\registration\login.html:117
+#: .\templates\registration\sign-up.html:57
+#: .\templates\registration\sign-up.html:144
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: .\templates\registration\login.html:62
+#: .\templates\registration\sign-up.html:60
+msgid "Your Social Campaign"
+msgstr "Ihre soziale Kampagne"
+
+#: .\templates\registration\login.html:89
+#: .\templates\registration\sign-up.html:87
+msgid "Or with email"
+msgstr "Oder mit E-Mail"
+
+#: .\templates\registration\login.html:109
+#: .\templates\registration\reset-password.html:57
+msgid "Forgot Password ?"
+msgstr "Passwort vergessen?"
+
+#: .\templates\registration\login.html:120
+#: .\templates\registration\sign-up.html:147
+msgid "Please wait.."
+msgstr "Bitte warten..."
+
+#: .\templates\registration\login.html:127
+msgid "Not a Member yet?"
+msgstr "Noch kein Mitglied?"
+
+#: .\templates\registration\login.html:128
+msgid "Sign up"
+msgstr "Registrieren"
+
+#: .\templates\registration\new-password.html:57
+msgid "Setup New Password ?"
+msgstr "Neues Passwort einrichten?"
+
+
+#: .\templates\registration\new-password.html:60
+msgid "Have you already reset the password ?"
+msgstr "Haben Sie das Passwort bereits zurückgesetzt?"
+
+#: .\templates\registration\new-password.html:61
+#: .\templates\registration\sign-up.html:155
+msgid "Sign in"
+msgstr "Anmelden"
+
+#: .\templates\registration\sign-up.html:154
+msgid "Already have an Account?"
+msgstr "Haben Sie bereits ein Konto?"
